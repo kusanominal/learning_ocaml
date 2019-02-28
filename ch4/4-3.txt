@@ -1,0 +1,5 @@
+# let hyojun_taiju height = (height ** 2.0) *. 22.0 ;;
+val hyojun_taiju : float -> float = <fun>
+
+# hyojun_taiju 1.7 ;;
+- : float = 63.5799999999999912

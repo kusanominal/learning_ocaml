@@ -1,0 +1,5 @@
+# let bmi height weight = weight /. (height ** 2.0) ;;
+val bmi : float -> float -> float = <fun>
+
+# bmi 1.7 60.0 ;;
+- : float = 20.7612456747404863

@@ -1,0 +1,7 @@
+※y: アルバイトを始めてからの年数, h: その月に働いた時間
+
+# let baito_kyuyo y h = h * (850 + y * 100) ;;
+val baito_kyuyo : int -> int -> int = <fun>
+
+# baito_kyuyo 1 20 ;;
+- : int = 19000
