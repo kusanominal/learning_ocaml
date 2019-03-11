@@ -1,0 +1,28 @@
+(* 目的：誕生日の月mと日dを受け取り星座を返す *)
+(* seiza : int -> int -> string *)
+let seiza m d =
+  if (m = 3 && d >= 21) || (m = 4 && d <= 19) then "おひつじ座" 
+  else if (m = 4 && d >= 20) || (m = 5 && d <= 20) then "おうし座" 
+  else if (m = 5 && d >= 21) || (m = 6 && d <= 21) then "ふたご座" 
+  else if (m = 6 && d >= 22) || (m = 7 && d <= 22) then "かに座" 
+  else if (m = 7 && d >= 23) || (m = 8 && d <= 22) then "しし座" 
+  else if (m = 8 && d >= 23) || (m = 9 && d <= 22) then "おとめ座" 
+  else if (m = 9 && d >= 23) || (m = 10 && d <= 23) then "てんびん座" 
+  else if (m = 10 && d >= 24) || (m = 11 && d <= 22) then "さそり座" 
+  else if (m = 11 && d >= 23) || (m = 12 && d <= 21) then "いて座" 
+  else if (m = 12 && d >= 22) || (m = 1 && d <= 19) then "やぎ座" 
+  else if (m = 1 && d >= 20) || (m = 2 && d <= 18) then "みずがめ座" 
+  else "うお座"
+
+let test1 = seiza 3 21 = "おひつじ座"
+let test2 = seiza 4 20 = "おうし座"
+let test3 = seiza 5 21 = "ふたご座"
+let test4 = seiza 6 22 = "かに座"
+let test5 = seiza 7 23 = "しし座"
+let test6 = seiza 8 23 = "おとめ座"
+let test7 = seiza 9 23 = "てんびん座"
+let test8 = seiza 10 24 = "さそり座"
+let test9 = seiza 11 23 = "いて座"
+let test10 = seiza 12 22 = "やぎ座"
+let test11 = seiza 1 20 = "みずがめ座"
+let test12 = seiza 2 19 = "うお座"
