@@ -1,0 +1,31 @@
+(* book_t 型を定義 *)
+type book_t = {
+    title : string;
+    author : string;
+    publisher : string;
+    price : int;
+    isbn : string;
+} ;;
+
+(* book_t 型のデータを3つ作成 *)
+let book1 = {
+    title = "プログラミングの基礎"; 
+    author = "浅井健一";
+    publisher = "サイエンス社";
+    price = 2300;
+    isbn = "978-4-7819-1160-1";
+} ;;
+let book2 = {
+    title = "ゼロから作るDeepLearning"; 
+    author = "斎藤康毅";
+    publisher = "オライリー・ジャパン";
+    price = 3400;
+    isbn = "978-4-87311-758-4";
+} ;;
+let book3 = {
+    title = "Pythonで学ぶ強化学習"; 
+    author = "久保隆宏";
+    publisher = "講談社";
+    price = 2800;
+    isbn = "978-4-06-514298-1";
+} ;;
