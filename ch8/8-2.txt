@@ -1,0 +1,27 @@
+(* okozukai_t 型を定義 *)
+type okozukai_t = {
+    product : string;
+    price : int;
+    place : string;
+    date : string;
+} ;;
+
+(* okozukai_t 型のデータを3つ作成 *)
+let okozukai1 = {
+    product = "HHKB JP Type-S PD-KB420WS";
+    price = 29700;
+    place = "Amazon";
+    date = "2019-03-25";
+} ;;
+let okozukai2 = {
+    product = "ゾイックキャッツシャンプー";
+    price = 1710;
+    place = "Amazon";
+    date = "2019-03-09";
+} ;;
+let okozukai3 = {
+    product = "Kindle Paperwhite";
+    price = 22980;
+    place = "Amazon";
+    date = "2018-12-13";
+} ;;
